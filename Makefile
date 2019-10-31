@@ -6,7 +6,7 @@ LIBS=
 
 .PHONY:	interp	clean
 
-dp:	main.o interp.o
+interp:	main.o interp.o
 	$(CC)	$(LIBS)	-o interp main.o interp.o
 
 main.o:		main.c
