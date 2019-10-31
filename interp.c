@@ -171,6 +171,11 @@ fail:
     {
         free(is->m);
     }
+    
+    if (t)
+    {
+        free(t);
+    }
 
     return -1;
 
@@ -230,5 +235,4 @@ double interp_spline(const struct interp_spline_s *is, const double x)
 
     double e = x - is->x[idx];
     return ((((d * e) + c) * e) + b) * e + a;
-    return 0;
 }
