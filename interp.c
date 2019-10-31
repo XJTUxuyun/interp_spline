@@ -215,7 +215,7 @@ double interp_spline(const struct interp_spline_s *is, const double x)
 {
     int idx = get_index(is->x, is->len, x);
 
-    printf("x-> %f idx->%d\n", x, idx);
+    // printf("x-> %f idx->%d\n", x, idx);
     if (idx == -1)
     {
         idx = 0;
